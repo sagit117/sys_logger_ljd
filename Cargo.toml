@@ -1,0 +1,15 @@
+[package]
+name = "sys_logger_ljd"
+version = "0.1.0"
+edition = "2024"
+description = "Консольная утилита CLI для отправки структурированных логов в Linux journald"
+keywords = ["cli", "systemd", "journald", "logging", "linux"]
+categories = ["command-line-utilities", "os::linux-apis"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+dirs = "7"
+tokio = { version = "1", features = ["full"] } 
+axum = "0.8"
+systemd = "0.10"
